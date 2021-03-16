@@ -1,0 +1,56 @@
+.card .cross{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.grid-row{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr
+}
+/* .overlay{} */
+
+.card .new-bar{
+    position: absolute;
+    border: solid 1px black;
+    background-color: pink;
+}
+.super-script{
+    font-size: 0.5em;
+    position: relative;
+    top: -0.5em;
+}
+
+.snackbar{
+    padding: 1rem;
+    border: 1px solid black ;
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
+    background-color: rgb(255, 255, 0);
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    /* height: 500px;
+    align-items: center; */
+}
+
+.card{
+    position: relative;
+    padding: 1rem;
+    margin: 1rem;
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between ; */
+    max-width: 200px;
+}
+
+.card > p{
+    flex-grow: 1;
+}
+
+.card + .border{
+    align-self: flex-end;
+}
